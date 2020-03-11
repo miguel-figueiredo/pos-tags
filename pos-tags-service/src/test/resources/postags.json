@@ -1,0 +1,32 @@
+{
+  "arcs": [
+    {
+      "dir": "left",
+      "end": 1,
+      "label": "nsubj",
+      "start": 0,
+      "text": "My Name"
+    },
+    {
+      "dir": "right",
+      "end": 2,
+      "label": "attr",
+      "start": 1,
+      "text": "Miguel"
+    }
+  ],
+  "words": [
+    {
+      "tag": "NN",
+      "text": "My name"
+    },
+    {
+      "tag": "VBZ",
+      "text": "is"
+    },
+    {
+      "tag": "NNP",
+      "text": "Miguel"
+    }
+  ]
+}

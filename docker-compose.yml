@@ -1,0 +1,21 @@
+version: '3'
+services:
+  postgres:
+    hostname: postgres
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postags
+      - POSTGRES_PASSWORD=postags
+      - POSTGRES_DB=postags
+  spacy:
+    hostname: spacy
+    image: jgontrum/spacyapi:en_v2
+    ports:
+      - "8888:80"
+  pos-tags-service:
+    hostname: pos-tags-service
+    image: quarkus/pos-tags-service-jvm
+    ports:
+      - "8080:8080"
