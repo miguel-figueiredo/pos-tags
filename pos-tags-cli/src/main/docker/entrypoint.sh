@@ -1,3 +1,3 @@
 #!/bin/bash
 
-java -jar /pos-tags-cli.jar $@
+java -jar /pos-tags-cli.jar "$@"

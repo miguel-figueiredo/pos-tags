@@ -14,6 +14,10 @@ public class TextRequest {
     private String text;
     private String model = "en";
 
+    public TextRequest(){
+        // Required by Hibernate
+    }
+
     public TextRequest(String text) {
         this.text = text;
     }

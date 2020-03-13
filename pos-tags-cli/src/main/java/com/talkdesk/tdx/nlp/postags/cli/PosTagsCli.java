@@ -37,6 +37,7 @@ public class PosTagsCli {
     }
 
     private static ClientParameters getClientParameters(String[] args) throws ParseException {
+
         CommandLine cmd = parseOptions(args);
         String hostname = cmd.getOptionValue(HOSTNAME_OPTION);
         String port = cmd.getOptionValue(PORT_OPTION);
@@ -56,7 +57,7 @@ public class PosTagsCli {
 
     private static Options getOptions() {
         Options options = new Options();
-        // TODO: change to required otion
+        // TODO: change to required option
         options.addOption(HOSTNAME_OPTION, true, HOSTNAME);
         options.addOption(PORT_OPTION, true, PORT);
         options.addOption(TEXT_OPTION, true, TEXT);

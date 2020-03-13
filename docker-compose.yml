@@ -15,6 +15,9 @@ services:
     ports:
       - "8888:80"
   pos-tags-service:
+    build:
+      context: ./pos-tags-service
+      dockerfile: src/main/docker/Dockerfile.jvm
     hostname: pos-tags-service
     image: quarkus/pos-tags-service-jvm
     ports:
